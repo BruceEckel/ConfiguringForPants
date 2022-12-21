@@ -12,7 +12,7 @@ installed WSL on your machine, the following instructions will guide you.
 ## Installing WSL on Windows 10/11 from the MS Store
 
 NOTE: These instructions assume there is no prior WSL on your system. Some steps
-may have changed after this was written. You might not see some of the error
+might have changed after this was written. You might not see some of the error
 messages described here. Some messages changed and even went away during the
 development of this information.
 
