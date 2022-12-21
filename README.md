@@ -37,8 +37,7 @@ development of this information.
 - [**Need a better tutorial**] Try this [getting-started tutorial for
   Pants](https://semaphoreci.com/blog/building-python-projects-with-pants). This
   was written for Pants V1, so there are some commands in the tutorial that have
-  small mistakes but Pants V2 will help you correct the issues).  You will run
-  into the following problem:
+  small mistakes but Pants V2 will help you correct the issues). You will encounter the following problem:
 - The default interpreter for Ubuntu 22.04.1 is Python 3.10.6, so trying to run
   Pants produces: \
 `No valid Python interpreter found. For pants_version = "2.16.0.dev0", Pants requires Python 3.7, 3.8, or 3.9 to run. Please check that a valid interpreter is installed and on your $PATH.`
