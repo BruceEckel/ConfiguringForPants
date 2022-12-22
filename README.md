@@ -52,10 +52,10 @@ development of this information.
 - The `deadsnakes` repository was the one used in all the posts I found.
 - **`sudo add-apt-repository ppa:deadsnakes/ppa`**
 - **`sudo apt update`**
-- We'll look for Python 3.9:
-- **`apt list | grep python3.9`**
-- Install it:
-- **`sudo apt install python3.9`**
+- We'll look for Python 3.9: \
+  **`apt list | grep python3.9`**
+- Install it: \
+  **`sudo apt install python3.9`**
 - We only need to add it to `$PATH`. No need to use `update-alternatives`.
 - If you run **`which python3.9`**, you should see `/usr/bin/python3.9`
 - Add the path for python3.9 to the `$PATH` variable. Open the file with
