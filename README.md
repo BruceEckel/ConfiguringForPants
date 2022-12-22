@@ -59,8 +59,8 @@ development of this information.
 - We only need to add it to `$PATH`. No need to use `update-alternatives`.
 - If you run **`which python3.9`**, you should see `/usr/bin/python3.9`
 - Add the path for python3.9 to the `$PATH` variable. Open the file with
-  **`code ~/.bashrc`** and add this to the end:
-- `export PATH="$PATH:/usr/bin/python3.9"`
+  **`code ~/.bashrc`** and add this to the end: \
+  `export PATH="$PATH:/usr/bin/python3.9"`
 - Either **`source ~/.bashrc`** or start a new bash shell.
 - **`echo $PATH`** to verify it's at the end.
 - Now when you run Pants you may get a new error: \
