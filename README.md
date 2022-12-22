@@ -5,7 +5,7 @@ Learn about Pants [here](https://www.pantsbuild.org/docs).
 The Pants 2 build system runs under Linux. If you are running on either MacOS or
 Linux, you're ready to use Pants if you can use the terminal on those
 systems (although you might still need to install additional Python
-interpreters). On Windows, Pants only runs under Windows Subsystem for Linux
+interpreters, as shown later). On Windows, Pants only runs under Windows Subsystem for Linux
 (WSL). (_They are working on supporting Windows directly_). If you have not
 installed WSL on your machine, the following instructions will guide you.
 
