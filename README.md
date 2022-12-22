@@ -9,14 +9,14 @@ interpreters, as shown later). On Windows, Pants only runs under Windows Subsyst
 (WSL). (_They are working on supporting Windows directly_). If you have not
 installed WSL on your machine, the following instructions will guide you.
 
-## Installing WSL on Windows 10/11 from the MS Store
+## Installing WSL on Windows 10/11 from the Microsoft Store
 
 NOTE: These instructions assume there is no prior WSL on your system. Some steps
 might have changed after this was written. You might not see some of the error
 messages described here. Some messages changed and even went away during the
 development of this information.
 
-- Inside the MS Store, find Ubuntu 22.04.1 LTS, click the "get" button.
+- Inside the Microsoft Store, find Ubuntu 22.04.1 LTS, click the "get" button.
 - Upon clicking the "Open" button after installing from the MS Store, you will
   see: `Error: 0x800701bc WSL 2 requires an update to its kernel component. For
   information please visit
