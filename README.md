@@ -25,7 +25,7 @@ development of this information.
 - Opening Ubuntu now produces a "virtual disk system limitation" error.
 - To fix this, open the Windows File Explorer and navigate to: \
   **`C:\Users\YOUR_USER\AppData\Local\Packages\CanonicalGroupLimited...`**
-- Right click on "LocalState", then "Properties," then "Advanced."
+- Right click on **LocalState**, then **Properties**, then **Advanced**.
 - Ensure "Compress contents to save disk space" and "Encrypt contents to secure data" are both ***de***selected.
 - Click "OK," then "Apply," then "Apply changes to this folder only."
 - Now when you start Ubuntu it should be successful, and will ask for a username and password.
