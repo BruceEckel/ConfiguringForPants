@@ -49,7 +49,7 @@ development of this information.
   replace it.
 - Note: If you have problems connecting to repos, make sure your VPN is turned
   off.
-- The "deadsnakes" repository was the one used in all the posts I found.
+- The `deadsnakes` repository was the one used in all the posts I found.
 - **`sudo add-apt-repository ppa:deadsnakes/ppa`**
 - **`sudo apt update`**
 - We'll look for Python 3.9:
