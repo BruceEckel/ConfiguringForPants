@@ -62,7 +62,7 @@ development of this information.
   **`code ~/.bashrc`** and add this to the end: \
   `export PATH="$PATH:/usr/bin/python3.9"`
 - Either **`source ~/.bashrc`** or start a new bash shell.
-- **`echo $PATH`** to verify it's at the end.
+- **`echo $PATH`** to verify that `:/usr/bin/python3.9` is at the end of the path.
 - Now when you run Pants you may get a new error: \
 `ModuleNotFoundError: No module named 'distutils.util'`
 - Fix with: **`sudo apt install python3.9-distutils`**
