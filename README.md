@@ -67,5 +67,8 @@ development of this information.
 `ModuleNotFoundError: No module named 'distutils.util'`
 - Fix with: **`sudo apt install python3.9-distutils`**
 - Full details of this process can be found [here](https://hackersandslackers.com/multiple-python-versions-ubuntu-20-04/).
+
+## Configuring for PyCharm or VSCode
+
 - [Instructions for configuring an IDE](https://www.pantsbuild.org/docs/setting-up-an-ide).
 
