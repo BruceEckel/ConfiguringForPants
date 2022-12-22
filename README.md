@@ -23,8 +23,8 @@ development of this information.
   [https://aka.ms/wsl2kernel](https://aka.ms/wsl2kernel)`
 - Follow the instructions at the above link to install the update.
 - Opening Ubuntu now produces a "virtual disk system limitation" error.
-- To fix this, open the Windows File Explorer and navigate to:
-- **`C:\Users\YOUR_USER\AppData\Local\Packages\CanonicalGroupLimited...`**
+- To fix this, open the Windows File Explorer and navigate to: \
+  **`C:\Users\YOUR_USER\AppData\Local\Packages\CanonicalGroupLimited...`**
 - Right click on "LocalState", then "Properties," then "Advanced."
 - Ensure "Compress contents to save disk space" and "Encrypt contents to secure data" are both ***de***selected.
 - Click "OK," then "Apply," then "Apply changes to this folder only."
