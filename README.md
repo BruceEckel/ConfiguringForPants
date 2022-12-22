@@ -16,17 +16,17 @@ might have changed after this was written. You might not see some of the error
 messages described here. Some messages changed and even went away during the
 development of this information.
 
-- Inside the Microsoft Store, find Ubuntu 22.04.1 LTS, click the "get" button.
+- Inside the Microsoft Store, find Ubuntu 22.04.1 LTS. Click the "get" button.
 - Upon clicking the "Open" button after installing from the MS Store, you will
   see: `Error: 0x800701bc WSL 2 requires an update to its kernel component. For
   information please visit
   [https://aka.ms/wsl2kernel](https://aka.ms/wsl2kernel)`
-- Follow the instructions at the link to install the update.
+- Follow the instructions at the above link to install the update.
 - Opening Ubuntu now produces a "virtual disk system limitation" error.
 - To fix this, open the Windows File Explorer and navigate to:
 - **`C:\Users\YOUR_USER\AppData\Local\Packages\CanonicalGroupLimited...`**
 - Right click on "LocalState", then "Properties," then "Advanced."
-- Ensure "Compress contents to save disk space" and "Encrypt contents to secure data" are both **de**selected.
+- Ensure "Compress contents to save disk space" and "Encrypt contents to secure data" are both ***de***selected.
 - Click "OK," then "Apply," then "Apply changes to this folder only."
 - Now when you start Ubuntu it should be successful, and will ask for a username and password.
 - As per the suggestion, run **`wsl.exe --update`**
