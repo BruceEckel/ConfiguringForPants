@@ -45,7 +45,6 @@ development of this information.
 
 ## Installing Additional Python Interpreters
 
-- See [here](https://hackersandslackers.com/multiple-python-versions-ubuntu-20-04/) for details.
 - Ubuntu depends on its default Python installation so you can't remove or
   replace it.
 - Note: If you have problems connecting to repos, make sure your VPN is turned
@@ -67,3 +66,5 @@ development of this information.
 - Now when you run Pants you may get a new error: \
 `ModuleNotFoundError: No module named 'distutils.util'`
 - Fix with: **`sudo apt install python3.9-distutils`**
+- Full details of this process can be found [here](https://hackersandslackers.com/multiple-python-versions-ubuntu-20-04/).
+
