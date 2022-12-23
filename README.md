@@ -72,3 +72,6 @@ development of this information.
 
 - [Instructions for configuring an IDE](https://www.pantsbuild.org/docs/setting-up-an-ide).
 
+## Issues
+
+- [File system changes not detected under WSL causing stale test runs](https://github.com/pantsbuild/pants/issues/16534)
