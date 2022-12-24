@@ -1,8 +1,8 @@
 from util.string import concat
 
 def test_string_concat() -> None:
-    result = concat("hello", "world")
-    assert result == "hello world"
+    result = concat("word1", "word2")
+    assert result == "word1 word2"
 
 
 if __name__ == '__main__':
