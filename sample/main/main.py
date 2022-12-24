@@ -1,10 +1,10 @@
 import sys
 from colors import green
-from util.string import string_concat
+from util.string import concat
 
 
 def message():
-    return string_concat("Hi", " world")
+    return concat("Hello", "world!")
 
 
 def print_message():
