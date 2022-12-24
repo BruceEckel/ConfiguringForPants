@@ -1,5 +1,5 @@
 import sys
-from colors import green
+from colors import white
 from util.string import concat
 
 
@@ -8,7 +8,7 @@ def message():
 
 
 def print_message():
-    print(green(message()))
+    print(white(message(), bg='green'))
 
 
 if __name__ == "__main__":
