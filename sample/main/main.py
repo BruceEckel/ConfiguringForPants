@@ -1,5 +1,5 @@
 import sys
-from colors import white
+from colored import fg, bg, attr
 from util.string import concat
 
 
@@ -8,7 +8,7 @@ def message():
 
 
 def print_message():
-    print(white(message(), bg='green'))
+    print(f"{fg('22')} {bg(223)} {message()} {attr(0)}")
 
 
 if __name__ == "__main__":

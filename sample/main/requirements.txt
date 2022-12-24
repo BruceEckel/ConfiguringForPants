@@ -1,1 +1,1 @@
-ansicolors>=1.1.8  # Imports the 'colors' package
+colored>=1.4.4
