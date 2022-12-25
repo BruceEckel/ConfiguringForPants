@@ -34,6 +34,58 @@ development of this information.
 - As per the suggestion, run **`wsl.exe --update`**
 - Double check your OS version by running **`lsb_release -a`**
 
+## Starting WSL
+
+- If you're in the Windows command prompt or PowerShell, you can start WSL with
+  either `wsl` or `bash`.
+- I recommend installing the
+  [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install)
+  to produce a better experience. This can start up any kind of shell and
+  uses multiple tabs.
+
+## Windows Directories vs. Linux Directories
+
+- WSL (Linux) uses its own directory system. It's possible to access the Windows
+  directory system from within WSL, but there are problems that show up when
+  using Pants.
+- It is important that you use the Linux directory system and not the Windows
+  directory system when creating Pants projects in WSL.
+- If you have cloned this repository into a Windows directory, re-clone it into
+  a Linux directory before going through the subsequent sections.
+- To discover whether you're in a Windows directory, at your WSL command prompt
+  inside your cloned repository, run `pwd`. If the resulting path starts with
+  `/mnt/` (typically `/mnt/c/`), then you are in the Windows file system and
+  you will [have problems](https://github.com/pantsbuild/pants/issues/16534).
+- To fix this, start up a new Linux shell and run `cd ~` to move to your home
+  directory on Linux.
+- When you run `pwd` you should now see something like `/home/bruce`. Notice
+  there's no `/mnt/` at the beginning of the path.
+- Navigate to the directory where you want to clone this repository (or create a
+  new directory and navigate there) and clone using the `git` command. For
+  example: \
+  `mkdir tmp` \
+  `cd tmp` \
+  `git clone https://github.com/BruceEckel/ConfiguringWSLForPants`
+
+### Using Github Desktop
+
+- If you prefer using Github Desktop rather than the command line...
+- Start a Linux shell and navigate to the Linux directory where you want
+  to clone the repository, as described above.
+- Find the path of that directory, to tell Github Desktop where to put the
+  repository: run `explorer.exe .` which will open the Windows Explorer
+  in that directory.
+- Click to the right (away from the path information) inside the address
+  bar, and the path information will convert into a URL. For example:
+  `\\wsl.localhost\Ubuntu-22.04\home\bruce\tmp`. Copy this to the clipboard.
+- Go to <https://github.com/BruceEckel/ConfiguringWSLForPants>.
+- Click on the green `<> Code` button.
+- Select "Open with Github Desktop."
+- Github Desktop should start, and give you a popup window. One of the fields
+  in that window is labeled "Local Path".
+- Paste the clipboard information as that local path and press the "Clone"
+  button.
+
 ## Python Version
 
 - Go through steps 0-4 in this repository. Each step contains its own README
@@ -74,7 +126,3 @@ development of this information.
 ## Configuring for PyCharm or VSCode
 
 - [Instructions for configuring an IDE](https://www.pantsbuild.org/docs/setting-up-an-ide).
-
-## Issues
-
-- [File system changes not detected under WSL causing stale test runs](https://github.com/pantsbuild/pants/issues/16534)
