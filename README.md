@@ -69,7 +69,8 @@ development of this information.
 
 ### Using Github Desktop
 
-- If you prefer using Github Desktop rather than the command line...
+- If you prefer using [Github Desktop](https://desktop.github.com/) rather than
+  the command line...
 - Start a Linux shell and navigate to the Linux directory where you want
   to clone the repository, as described above.
 - Find the path of that directory, to tell Github Desktop where to put the
