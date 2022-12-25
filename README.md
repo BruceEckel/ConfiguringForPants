@@ -71,11 +71,11 @@ development of this information.
 
 - If you prefer using [Github Desktop](https://desktop.github.com/) rather than
   the command line...
-- Start a Linux shell and navigate to the Linux directory where you want
-  to clone the repository, as described above.
+- As described above, start a Linux shell and navigate to the Linux directory
+  where you want to clone the repository.
 - Find the path of that directory, to tell Github Desktop where to put the
-  repository: run `explorer.exe .` which will open the Windows Explorer
-  in that directory.
+  repository. Run `explorer.exe .` which will open the Windows Explorer in that
+  directory.
 - Click to the right (away from the path information) inside the address
   bar, and the path information will convert into a URL. For example:
   `\\wsl.localhost\Ubuntu-22.04\home\bruce\tmp`. Copy this to the clipboard.
@@ -93,9 +93,8 @@ development of this information.
   containing the instructions for that step. You'll start with an ordinary
   Python repository (0_sample_without_pants), and add Pants support one step
   at a time.
-- You will encounter the following problem:
-- The default interpreter for Ubuntu 22.04.1 is Python 3.10.6, so trying to run
-  Pants produces: \
+- You will encounter this following problem: The default interpreter for Ubuntu
+  22.04.1 is Python 3.10.6, so trying to run Pants produces: \
 `No valid Python interpreter found. For pants_version = "2.16.0.dev0", Pants requires Python 3.7, 3.8, or 3.9 to run. Please check that a valid interpreter is installed and on your $PATH.`
 - We need to install a Python interpreter that Pants can work with.
 
@@ -108,7 +107,7 @@ development of this information.
 - The `deadsnakes` repository was the one used in all the posts I found.
 - **`sudo add-apt-repository ppa:deadsnakes/ppa`**
 - **`sudo apt update`**
-- We'll look for Python 3.9: \
+- We'll look for Python 3.9, the most recent one Pants will work with: \
   **`apt list | grep python3.9`**
 - Install it: \
   **`sudo apt install python3.9`**
@@ -117,7 +116,7 @@ development of this information.
 - Add the path for python3.9 to the `$PATH` variable. Open the file with
   **`code ~/.bashrc`** and add this to the end: \
   `export PATH="$PATH:/usr/bin/python3.9"`
-- Either **`source ~/.bashrc`** or start a new bash shell.
+- Either **`source ~/.bashrc`** or start a new bash (wsl) shell.
 - **`echo $PATH`** to verify that `:/usr/bin/python3.9` is at the end of the path.
 - Now when you run Pants you may get a new error: \
 `ModuleNotFoundError: No module named 'distutils.util'`
