@@ -18,7 +18,10 @@ might have changed after this was written. You might not see some of the error
 messages described here. Some messages changed and even went away during the
 development of this information.
 
-- Inside the Microsoft Store, find Ubuntu 22.04.1 LTS. Click the "get" button.
+- Inside the [Microsoft Store](https://apps.microsoft.com/store/apps), search
+  for and go to [Ubuntu 22.04.1
+  LTS](https://apps.microsoft.com/store/search/Ubuntu%2022.04.1%20LTS). Click
+  the "get" button.
 - Upon clicking the "Open" button after installing from the MS Store, you will
   see: `Error: 0x800701bc WSL 2 requires an update to its kernel component. For
   information please visit
@@ -30,7 +33,8 @@ development of this information.
 - Right click on **LocalState**, then **Properties**, then **Advanced**.
 - Ensure "Compress contents to save disk space" and "Encrypt contents to secure data" are both ***de***selected.
 - Click "OK," then "Apply," then "Apply changes to this folder only."
-- Now when you start Ubuntu it should be successful, and will ask for a username and password.
+- Now when you start Ubuntu it should be successful, and will ask you to create
+  a username and password.
 - As per the suggestion, run **`wsl.exe --update`**
 - Double check your OS version by running **`lsb_release -a`**
 
