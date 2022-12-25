@@ -1,13 +1,15 @@
-# Configuring Your Computer to use the Pants Build System
+# Configuring WSL to use the Pants Build System
+
+**WSL**: Windows Subsystem for Linux (Version 2)
 
 Learn about Pants [here](https://www.pantsbuild.org/docs).
 
 The Pants 2 build system runs under Linux. If you are running on either MacOS or
-Linux, you're ready to use Pants if you can use the terminal on those
-systems (although you might still need to install additional Python
-interpreters, as shown later). On Windows, Pants only runs under Windows Subsystem for Linux
-(WSL). (_They are working on supporting Windows directly_). If you have not
-installed WSL on your machine, the following instructions will guide you.
+Linux, you're ready to use Pants if you can use the terminal on those systems
+(although you might still need to install additional Python interpreters, as
+shown later). On Windows, Pants only runs under WSL (_They are working on
+supporting Windows directly_). If you have not installed WSL on your machine,
+the following instructions will guide you.
 
 ## Installing WSL on Windows 10/11 from the Microsoft Store
 
@@ -34,10 +36,11 @@ development of this information.
 
 ## Python Version
 
-- [**Need a better tutorial**] Try this [getting-started tutorial for
-  Pants](https://semaphoreci.com/blog/building-python-projects-with-pants). This
-  was written for Pants V1, so there are some commands in the tutorial that have
-  small mistakes but Pants V2 will help you correct the issues). You will encounter the following problem:
+- Go through steps 0-4 in this repository. Each step contains its own README
+  containing the instructions for that step. You'll start with an ordinary
+  Python repository (0_sample_without_pants), and add Pants support one step
+  at a time.
+- You will encounter the following problem:
 - The default interpreter for Ubuntu 22.04.1 is Python 3.10.6, so trying to run
   Pants produces: \
 `No valid Python interpreter found. For pants_version = "2.16.0.dev0", Pants requires Python 3.7, 3.8, or 3.9 to run. Please check that a valid interpreter is installed and on your $PATH.`
