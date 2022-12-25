@@ -19,13 +19,14 @@ messages described here. Some messages changed and even went away during the
 development of this information.
 
 - Inside the [Microsoft Store](https://apps.microsoft.com/store/apps), search
-  for and go to [Ubuntu 22.04.1
+  for [Ubuntu 22.04.1
   LTS](https://apps.microsoft.com/store/search/Ubuntu%2022.04.1%20LTS). Click
-  the "get" button.
+  the "Get in Store app" button.
+- Click the "get" button.
 - Upon clicking the "Open" button after installing from the MS Store, you will
   see: `Error: 0x800701bc WSL 2 requires an update to its kernel component. For
   information please visit
-  [https://aka.ms/wsl2kernel](https://aka.ms/wsl2kernel)`
+  [https://aka.ms/wsl2kernel](https://aka.ms/wsl2kernel)`.
 - Follow the instructions at the above link to install the update.
 - Opening Ubuntu now produces a "virtual disk system limitation" error.
 - To fix this, open the Windows File Explorer and navigate to: \
@@ -95,9 +96,9 @@ development of this information.
 
 - Go through steps 0-4 in this repository. Each step contains its own README
   containing the instructions for that step. You'll start with an ordinary
-  Python repository (0_sample_without_pants), and add Pants support one step
+  Python repository (**0_sample_without_pants**), and add Pants support one step
   at a time.
-- You will encounter this following problem: The default interpreter for Ubuntu
+- You will encounter a problem because the default interpreter for Ubuntu
   22.04.1 is Python 3.10.6, so trying to run Pants produces: \
 `No valid Python interpreter found. For pants_version = "2.16.0.dev0", Pants requires Python 3.7, 3.8, or 3.9 to run. Please check that a valid interpreter is installed and on your $PATH.`
 - We need to install a Python interpreter that Pants can work with.
@@ -117,7 +118,7 @@ development of this information.
   **`sudo apt install python3.9`**
 - We only need to add it to `$PATH`. No need to use `update-alternatives`.
 - If you run **`which python3.9`**, you should see `/usr/bin/python3.9`
-- Add the path for python3.9 to the `$PATH` variable. Open the file with
+- Add the path for Python 3.9 to the `$PATH` variable. Open the file with
   **`code ~/.bashrc`** and add this to the end: \
   `export PATH="$PATH:/usr/bin/python3.9"`
 - Either **`source ~/.bashrc`** or start a new bash (wsl) shell.
