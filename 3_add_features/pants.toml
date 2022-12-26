@@ -9,6 +9,8 @@ backend_packages = [
   "pants.backend.python.typecheck.mypy",
 ]
 [anonymous-telemetry]
-enabled = false
+  enabled = false
+[python]
+  interpreter_constraints = ["CPython==3.10.*"]
 [source]
-root_patterns = ["/"]
+  root_patterns = ["/"]
