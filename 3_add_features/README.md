@@ -1,6 +1,6 @@
 # Step 3
 
-- Copy the contents of the directory `/2_run_tailor` into a new directory and
+- Copy the contents of the directory `2_run_tailor` into a new directory and
   `cd` into it.
 
 - Add more abilities to your Pants build. Modify `pants.toml` so
@@ -21,7 +21,7 @@ backend_packages = [
 
 - You can run `./pants check ::` and you will see an error produced by `mypy`.
 
-- (Everything works without this) Add a *source root* (see
+- [NOTE: Everything works fine without this] Add a *source root* (see
   <https://www.pantsbuild.org/docs/source-roots>) to `pants.toml`:
 ```
 [source]
