@@ -1,4 +1,4 @@
-# Step 1
+# Step 1: Install Pants
 
 - Make a copy of the directory `0_sample_without_pants` and `cd` into it.
 

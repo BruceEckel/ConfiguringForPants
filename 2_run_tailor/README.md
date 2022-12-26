@@ -1,4 +1,4 @@
-# Step 2
+# Step 2: Run Pants Tailor
 
 - Copy the contents of the directory `1_install_pants` into a new directory and
   `cd` into it.

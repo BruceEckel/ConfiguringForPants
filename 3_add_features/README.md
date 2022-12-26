@@ -1,4 +1,4 @@
-# Step 3
+# Step 3: Add Features
 
 - Copy the contents of the directory `2_run_tailor` into a new directory and
   `cd` into it.
