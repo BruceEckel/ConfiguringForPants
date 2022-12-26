@@ -10,3 +10,5 @@
 
 - The result should look like this current directory. Note the files `pants` and
   `pants.toml`.
+
+- You may need to run **`chmod +x ./pants`** to make it executable.
