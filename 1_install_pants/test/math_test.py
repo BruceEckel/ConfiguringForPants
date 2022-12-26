@@ -5,5 +5,5 @@ def test_math_sum() -> None:
     assert result == 11
 
 if __name__ == '__main__':
-    # Displays 'None' as a check to make sure it has run
+    # Displays 'None' as a check to show it has run
     print(test_math_sum())
