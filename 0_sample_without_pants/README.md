@@ -1,4 +1,4 @@
-# Pants Sample for Testing
+# Python Sample Without Pants
 
 Inspired by <https://github.com/semaphoreci-demos/semaphore-demo-python-pants>.
 
