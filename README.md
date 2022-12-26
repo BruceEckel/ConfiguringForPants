@@ -44,10 +44,9 @@ development of this information.
 
 - If you're in the Windows command prompt or PowerShell, you can start WSL with
   either `wsl` or `bash`.
-- I recommend installing the
-  [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install)
-  to produce a better experience. This can start up any kind of shell and
-  uses multiple tabs.
+- For a better experience, I recommend installing the [Windows
+  Terminal](https://learn.microsoft.com/en-us/windows/terminal/install). This
+  can start up any kind of shell and uses multiple tabs.
 
 ## Windows Directories vs. Linux Directories
 
