@@ -33,7 +33,7 @@ development of this information.
   **`C:\Users\YOUR_USER\AppData\Local\Packages\CanonicalGroupLimited...`**
 - Right click on **LocalState**, then **Properties**, then **Advanced**.
 - Ensure "Compress contents to save disk space" and "Encrypt contents to secure
-  data" are both <u>***de***</u>selected.
+  data" are both <ins>***de***</ins>selected.
 - Click "OK," then "Apply," then "Apply changes to this folder only."
 - Now when you start Ubuntu it should be successful, and will ask you to create
   a username and password.
