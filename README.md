@@ -107,13 +107,9 @@ development of this information.
   -bash: ./test.sh: Permission denied
   -bash: ./pants: Permission denied
   ```
-  To fix this you will need to run:
-  **
-  ```
-  chmod +x ./pants
-  chmod +x ./test.sh
-  ```
-  **
+  To fix this you will need to run: \
+  **`chmod +x ./pants`** \
+  **`chmod +x ./test.sh`**
 - You will encounter a problem because the default interpreter for Ubuntu
   22.04.1 is Python 3.10.6, so trying to run Pants produces: \
 `No valid Python interpreter found. For pants_version = "2.16.0.dev0", Pants requires Python 3.7, 3.8, or 3.9 to run. Please check that a valid interpreter is installed and on your $PATH.`
