@@ -94,10 +94,10 @@ development of this information.
 
 ## Python Version
 
-- Go through steps 0-4 in this repository. Each step contains its own README
-  containing the instructions for that step. You'll start with an ordinary
-  Python repository (**0_sample_without_pants**), and add Pants support one step
-  at a time.
+- Go through steps 0-3 in this repository. Each step is a directory containing
+  its own README with the instructions for that step. You'll start with an
+  ordinary Python repository (**0_sample_without_pants**), and add Pants support
+  one step at a time.
 - You will encounter a problem because the default interpreter for Ubuntu
   22.04.1 is Python 3.10.6, so trying to run Pants produces: \
 `No valid Python interpreter found. For pants_version = "2.16.0.dev0", Pants requires Python 3.7, 3.8, or 3.9 to run. Please check that a valid interpreter is installed and on your $PATH.`

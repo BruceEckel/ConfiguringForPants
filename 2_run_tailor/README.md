@@ -1,5 +1,10 @@
 # Step 2
 
+- Copy the contents of the directory `1_install_pants` into a new directory and
+  `cd` into it.
+
+- To make Pants runnable you must execute `chmod +x ./pants`
+
 - NOTE that running `./pants tailor ::` at this point accomplishes nothing,
   although it produces output that seems to indicate everything is OK.
 
@@ -26,13 +31,29 @@ Created util/BUILD:
   - Add python_sources target util
 ```
 
+- Note that each subdirectory now contains a `BUILD` file.
+
 - Pants also complains about `[anonymous-telemetry]`. To silence this,
-  add to the end of `pants.toml`:
+  add this to the end of `pants.toml`:
 
 ```
 [anonymous-telemetry]
 enabled = false
 ```
 
-- At this point, pants *seems* to be configured. But running `./pants test ::`
-  does nothing, and running `./pants run main/main.py` produces an error message.
+- Now run `./pants test ::` and you should see output like this:
+```
+19:12:20.99 [INFO] Completed: Run Pytest - test/math_test.py:tests succeeded.
+19:12:20.99 [INFO] Completed: Run Pytest - test/main_test.py:tests succeeded.
+19:12:21.00 [INFO] Completed: Run Pytest - test/string_test.py:tests succeeded.
+
+✓ test/main_test.py:tests succeeded in 0.26s.
+✓ test/math_test.py:tests succeeded in 0.26s.
+✓ test/string_test.py:tests succeeded in 0.27s.
+```
+
+- If you run `./pants run main/main.py` you should see output like this:
+```
+  Hello world!
+sys.version = '3.9.15 (main, Oct 12 2022, 19:14:37) \n[GCC 11.2.0]'
+```
