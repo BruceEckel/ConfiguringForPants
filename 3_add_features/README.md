@@ -27,5 +27,5 @@ backend_packages = [
 [source]
 root_patterns = ["/"]
 ```
-Because this project is quite straightforward it can omit this and use the default source roots
-described [here](https://www.pantsbuild.org/docs/source-roots#configuring-no-source-roots).
+  Because this project is quite straightforward it can omit this and use the default source roots
+  described [here](https://www.pantsbuild.org/docs/source-roots#configuring-no-source-roots).
