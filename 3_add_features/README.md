@@ -21,9 +21,11 @@ backend_packages = [
 
 - You can run **`./pants check ::`** and you will see an error produced by `mypy`.
 
-- [NOTE: Everything works fine without this] Add a *source root* (see
+- Optional: Add a *source root* (see
   <https://www.pantsbuild.org/docs/source-roots>) to `pants.toml`:
 ```
 [source]
 root_patterns = ["/"]
 ```
+Because this project is quite straightforward it can omit this and use the default source roots
+described [here](https://www.pantsbuild.org/docs/source-roots#configuring-no-source-roots).
