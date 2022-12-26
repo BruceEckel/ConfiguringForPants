@@ -43,7 +43,7 @@ development of this information.
 ## Starting WSL
 
 - If you're in the Windows command prompt or PowerShell, you can start WSL with
-  either `wsl` or `bash`.
+  either **`wsl`** or **`bash`**.
 - For a better experience, I recommend installing the [Windows
   Terminal](https://learn.microsoft.com/en-us/windows/terminal/install). This
   can start up any kind of shell and uses multiple tabs.
@@ -58,19 +58,20 @@ development of this information.
 - If you have cloned this repository into a Windows directory, re-clone it into
   a Linux directory before going through the subsequent sections.
 - To discover whether you're in a Windows directory, at your WSL command prompt
-  inside your cloned repository, run `pwd`. If the resulting path starts with
-  `/mnt/` (typically `/mnt/c/`), then you are in the Windows file system and
-  you will [have problems](https://github.com/pantsbuild/pants/issues/16534).
-- To fix this, start up a new Linux shell and run `cd ~` to move to your home
-  directory on Linux.
-- When you run `pwd` you should now see something like `/home/bruce`. Notice
+  inside your cloned repository, run **`pwd`**. If the resulting path starts
+  with `/mnt/` (typically `/mnt/c/`), then you are in the Windows file system
+  and you will [have
+  problems](https://github.com/pantsbuild/pants/issues/16534).
+- To fix this, start up a new Linux shell and run **`cd ~`** to move to your
+  home directory on Linux.
+- When you run **`pwd`** you should now see something like `/home/bruce`. Notice
   there's no `/mnt/` at the beginning of the path.
 - Navigate to the directory where you want to clone this repository (or create a
   new directory and navigate there) and clone using the `git` command. For
   example: \
-  `mkdir tmp` \
-  `cd tmp` \
-  `git clone https://github.com/BruceEckel/ConfiguringWSLForPants`
+  **`mkdir tmp`** \
+  **`cd tmp`** \
+  **`git clone https://github.com/BruceEckel/ConfiguringWSLForPants`**
 
 ### Using Github Desktop
 
@@ -78,9 +79,9 @@ development of this information.
   the command line...
 - As described above, start a Linux shell and navigate to the Linux directory
   where you want to clone the repository.
-- Find the path of that directory, to tell Github Desktop where to put the
-  repository. Run `explorer.exe .` which will open the Windows Explorer in that
-  directory.
+- Find the path of that directory so you can tell Github Desktop where to put
+  the repository. Run **`explorer.exe .`** which will open the Windows Explorer
+  in that directory.
 - Click to the right (away from the path information) inside the address
   bar, and the path information will convert into a URL. For example:
   `\\wsl.localhost\Ubuntu-22.04\home\bruce\tmp`. Copy this to the clipboard.
@@ -112,7 +113,7 @@ development of this information.
 - The `deadsnakes` repository was the one used in all the posts I found.
 - **`sudo add-apt-repository ppa:deadsnakes/ppa`**
 - **`sudo apt update`**
-- We'll look for Python 3.9, the most recent one Pants will work with: \
+- We'll look for Python 3.9, the most recent one that Pants can use: \
   **`apt list | grep python3.9`**
 - Install it: \
   **`sudo apt install python3.9`**
