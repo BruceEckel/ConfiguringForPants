@@ -99,6 +99,21 @@ development of this information.
   its own README with the instructions for that step. You'll start with an
   ordinary Python repository (**0_sample_without_pants**), and add Pants support
   one step at a time.
+- **NOTE:** Although I've made all the appropriate files executable, for some
+  reason this change doesn't seem to be uploaded to the Github repo. For that
+  reason you will get a message when you try to run **`./test.sh`** or
+  **`./pants`**:
+  ```
+  -bash: ./test.sh: Permission denied
+  -bash: ./pants: Permission denied
+  ```
+  To fix this you will need to run:
+  **
+  ```
+  chmod +x ./pants
+  chmod +x ./test.sh
+  ```
+  **
 - You will encounter a problem because the default interpreter for Ubuntu
   22.04.1 is Python 3.10.6, so trying to run Pants produces: \
 `No valid Python interpreter found. For pants_version = "2.16.0.dev0", Pants requires Python 3.7, 3.8, or 3.9 to run. Please check that a valid interpreter is installed and on your $PATH.`
