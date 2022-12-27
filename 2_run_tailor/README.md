@@ -3,7 +3,7 @@
 - Copy the contents of the directory `1_install_pants` into a new directory and
   **`cd`** into it.
 
-- To make Pants runnable you must execute **`chmod +x ./pants`**.
+- To make Pants runnable you might need to execute **`chmod +x ./pants`**.
 
 - NOTE that running **`./pants tailor ::`** at this point accomplishes nothing,
   although it produces output that seems to indicate everything is OK.
